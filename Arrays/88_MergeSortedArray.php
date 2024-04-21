@@ -16,18 +16,13 @@ class Solution
      * @param Integer $n
      * @return NULL
      */
-    function merge(&$nums1, $m, $nums2, $n)
-    {
+    function merge(&$nums1, $m, $nums2, $n) {
         // take elements based on the $m and $n length 
-        $nums1 = array_slice($nums1, 0, $m + $n);
+        $nums1 = array_slice($nums1, 0, $m);
         $nums2 = array_slice($nums2, 0, $n);
 
-        // ignore 0 values from the array 
-        $nums1 = array_filter($nums1, function ($element) {
-            return ($element != 0);
-        });
         // merge 2 arrays then sort the values ASC
-        $nums1 = array_merge($nums1, $nums2);
+        $nums1 = array_merge($nums1 , $nums2);
         asort($nums1);
     }
 }
