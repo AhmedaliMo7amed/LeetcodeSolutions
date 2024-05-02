@@ -10,6 +10,7 @@ class Solution {
      * @return Integer
      */
     function numIdenticalPairs($nums) {
+       // nums = [1,2,3,1,1,3]
        $existArr = [];
        $result = 0;
         foreach ($nums as $num) {
