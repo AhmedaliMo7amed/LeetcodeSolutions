@@ -27,9 +27,9 @@ class Solution {
     function numIdenticalPairs($nums) {
           $result = 0;
           $length = count($nums);
-          for ($i = 0; $i < $length; $i++) {
-              for ($j = $i + 1; $j < $length; $j++) {
-                  if ($nums[$i] == $nums[$j]) {
+          for ($st = 0; $st < $length; $st++) {
+              for ($nd = $st + 1; $nd < $length; $nd++) {
+                  if ($nums[$st] == $nums[$nd]) {
                       $result++;
                   }
               }
