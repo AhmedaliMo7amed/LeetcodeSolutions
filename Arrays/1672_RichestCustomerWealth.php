@@ -24,3 +24,23 @@ class Solution {
         return $maxWealth;
     }
 }
+
+
+
+/** Another Solution **/ 
+// class Solution {
+//     /**
+//      * @param Integer[][] $accounts
+//      * @return Integer
+//      */
+//     function maximumWealth($accounts) {
+//         $maxWealth = 0;
+//         foreach($accounts as $values){
+//             $arrSum = array_sum($values);
+//             $maxWealth = max($arrSum , $maxWealth);
+//         }
+//         return $maxWealth;
+//     }
+// }
+
+
